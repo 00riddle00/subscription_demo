@@ -51,7 +51,7 @@ def main(argv=sys.argv):
             'Politics',
             'Celebrities',
             'Sports',
-            'Economy',
+            'Economics',
             'Entertainment',
         ]
 
