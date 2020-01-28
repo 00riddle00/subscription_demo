@@ -9,7 +9,9 @@ Manual setup guide
 `export VENV=$(pwd)/env`
 
 ##### initialize virtual environment
-`virtualenv -p python3 $VENV`
+- `virtualenv -p python3 $VENV`
+or 
+- `python3 -m venv $VENV`
 
 ##### install setuptools
 `$VENV/bin/pip3 install --upgrade pip setuptools`

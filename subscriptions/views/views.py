@@ -4,6 +4,7 @@ import transaction
 from email_validator import validate_email, EmailNotValidError
 
 from pyramid.response import Response
+from sqlalchemy import text
 
 from sqlalchemy.exc import DBAPIError
 
@@ -122,7 +123,7 @@ def admin_view(request):
         orderBy = request.params['order_by']
         if orderBy == 'date':
             subscriptions = request.dbsession.query(Subscriber).order_by(
-                "registered desc").all()
+                text("registered desc")).all()
         elif orderBy == 'email':
             subscriptions = request.dbsession.query(Subscriber).order_by(
                 "email").all()

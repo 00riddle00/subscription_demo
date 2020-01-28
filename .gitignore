@@ -1,18 +1,42 @@
-log
-__pycache__
-.idea
-*.pyc
+# Backuping
+*.bak
 *.orig
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# CSS
 .sass-cache
-.coveragerc
-.ropeproject
-.directory
-*.mo
-*.swo
-*.egg
-*.egg-info
+
+# DB
 *.sqlite
-*.swp
-*~
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+
+# Environments
 env/
 venv/
+
+# IDE files
+.idea
+
+# Logs
+log
+
+# Rope project settings
+.ropeproject
+
+# Translations
+*.mo
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+
+# Vim
+*.swo
+*.swp
+*~
